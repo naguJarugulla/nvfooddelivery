@@ -1,0 +1,22 @@
+
+    {% extends 'home.html' %}
+{% block content %}
+<div class="bgcolor3 pt-2 pb-2" style="margin-top:100px;">
+    <div class="container">
+      <div class="row">
+      {% for i in orders %}         
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="explorecards shadow p-2 mb-2">
+              <img src="{{url_for('static',filename=i[1]+'.jpg')}}" height="200" width="200" class="exploreimage w-100"/>
+              <label class="cardhead4" > {{i[2]}}</label><br>
+
+              <label class="cardhead4" style="margin-top:10px;">quantity :{{i[3]}}</label><br>
+
+              <label class="cardhead4"  style="margin-top:10px;">price:{{i[4]}}</label>
+            </div>
+            </div>
+        {% endfor %}
+        </div>
+        </div>
+        </div>
+{% endblock%}

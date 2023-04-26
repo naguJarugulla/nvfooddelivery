@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>updateitems</title>
+    <style>
+  
+    body{
+        background-image: url('https://media.istockphoto.com/id/1416417320/photo/healthy-food-healthy-eating-background-salmon-fruit-vegetable-and-berry-superfood.jpg?b=1&s=170667a&w=0&k=20&c=HONfLrKhOcBq0JKWC5JVepfa8gYdt0bRnWv-Y6uIAl8=');
+        background-size: cover;
+        height: 100vh;
+    }
+    .new{
+        margin-top: 10%;
+        margin-right: 50%;
+    }
+    .back{
+        background-color: rgb(9, 139, 233);
+        padding-top: 10%;
+        margin-left: 20%;
+
+    }
+    .button{
+        padding-button: 35%;
+    }
+</style>
+  
+</head>
+{% with messages = get_flashed_messages() %}
+  {% if messages %}
+    {% for message in messages %}
+      <center><b>{{ message }}</b></center>
+    {% endfor %}
+  {% endif %}
+{% endwith %}
+<body>
+  <div class="new">
+    <center>
+    <form method="POST">
+      <div class="back">
+        <div class="button">
+          <label>ITEM NAME</label>
+        <input type="text" placeholder="enter the item name" name="name" required value='{{items[1]}}'/><br><br><br><br><br><br>
+        <label>CATEGORY</label>
+        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" name="category" value='{{items[2]}}' required>category
+            <option >fastfoods</option>
+            <option >vegfoods</option>
+            <option >nonvegfoods</option>
+            <optiom>pastry</option>
+            <option>icecreams</option>
+            <option>homefood</option>
+            <option>staters</option>
+            <option>soups</option>
+          </select><br><br><br><br><br><br>
+          <label>PRICE: </label>
+        <input type="number" placeholder="enter the price" name="price" required value='{{items[3]}}'/><br><br><br><br><br><br>
+<button type="submit">submit</button>
+</div>
+</div>
+    </form>
+  </center>
+    </div>
+</body>
+</html>

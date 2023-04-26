@@ -1,0 +1,45 @@
+{% extends 'home.html' %}
+{% block content %}
+
+<div class="bgcolor3 pt-2 pb-2" style="margin-top: 100px;">
+    <div class="container">
+      <div class="row">
+      {% for i in ritems %}         
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="explorecards shadow p-2 mb-2">
+            
+            <form method="POST" action="{{url_for('pay',itemid=i[0],name=i[1],price=i[3])}}">
+
+              <img src="{{url_for('static',filename=i[0]+'.jpg')}}" height="200" width="200" class="exploreimage w-100"/>
+              <label class="cardhead4">{{i[1]}}</label>
+              <br>
+              <label class="cardhead4">{{i[2]}}</label>
+              <p class="quantity mt-1">Quantity
+                <select class="form-select" aria-label="Default select example" name="qty">
+                    <option selected>1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                  </select>
+                </p>
+
+              <label class="cardhead4">{{i[3]}} &#8377;</label>
+             
+          <div>
+          <a href="{{url_for('cart',itemid=i[0],name=i[1],price=i[3])}}" class="btn btn-info ml-auto add-button">add to cart</a>
+          <button class="btn btn-success add-button" type="submit">Buy Now</button>
+        </div>
+      </form>
+      </div>
+      </div>
+        {% endfor %}
+        </div>
+        </div>
+        </div>
+{% endblock%}

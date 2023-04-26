@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/aa7ec8bf4a.js" crossorigin="anonymous"></script>
+    <style>
+      /*styling to the button of navbar*/
+      #go {
+  /*background-color: #4CAF50; Green */
+  font-weight: bold;
+  
+  background-color: blue;
+  color:white;
+  padding: 5px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 5px;
+  
+}
+#go:focus{
+  font-weight: 20px;
+}
+#go:hover {
+  background-color:red;
+  color: black;
+  font-weight: bold;
+}
+.go {
+  background-color:red; 
+  color: black; 
+  border: 2px solid #4CAF50;
+}
+    .stylinglogo
+{
+    width:150px;
+    height: 70px;
+}
+/*#go{
+    color:black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border: none;
+    
+}
+#go:hover{
+
+color: #c90202;
+    
+}
+#go1{
+    background-color: #c90202;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border: none;
+}
+#go1:hover{
+    background-color: gray;
+    color:#c90202
+}*/
+/*resturant button*/
+.btn{
+          border-color:blue;
+}
+.btn:focus{
+  border-radius: 5%;
+color:#c90202;
+border-color:green;
+}
+.head1{
+    font-size: 180px;
+    font-weight: bold;
+    /* ?color:rgba(9, 186, 47, 0.786); */
+    font-family:'Courier New', Courier, monospace;
+    color: rgba(26, 95, 164, 0.8);
+    font-size: 48pt;
+    text-align: center;
+}
+.head{
+  
+ 
+  margin-top: 200px;
+  margin-left: 20%;
+  margin-right: 20%;
+  font-weight: bold;
+}
+.bgimg{
+  filter: grayscale(50%);
+     background-image: url('https://res.cloudinary.com/dqpcmpnb5/image/upload/v1682316033/icon_r2wap9.jpg'); 
+    /* background-image:url("nvimg.jpeg"); */
+    background-size: cover;
+    height:100vh;
+}
+.paraline{
+    color:rgb(92, 16, 222);
+    font-family:'Courier New', Courier, monospace;
+    font-size: 55px;
+    font-weight: bolder;
+}
+
+.bgcolor{
+    background-color: #f9fbfe;
+}
+.head2{
+    color: #183b56;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+}
+.para2{
+    color:#5a7184;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+.carding{
+    text-align:center;
+    background-color: white;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #e5eaf4;
+    border-radius: 16px;
+}
+.cardimg{
+    width:100px;
+    height: 120px;
+}
+.chead{
+    color:#323f4b;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 22px;
+    font-weight: bold;
+}
+.cpara{
+    color:#7b8794;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    
+}
+.bgcolor3{
+    background-color: white;
+
+}
+.explorehead{
+    color:#183b56;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 28px;
+    font-weight: 700;
+}
+.explorecards{
+    border-radius: 16px;
+}
+.exploreimage{
+    border-radius: 16px;
+}
+.cardhead4{
+    color: #323f4b;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 24px;
+}
+.explorelink{
+    color: #c90202;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 14px;
+    font-weight: bold;
+
+}
+.services{
+  margin-left: 10%;
+  color: #183b56;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 28px;
+    font-weight: bold;
+}
+    .w
+    {
+        width: 95%;
+        color:black;
+         font-family:'Courier New', Courier, monospace;
+        font-weight: bold;
+        border: 1px ;
+        
+}
+.w:hover{
+
+color:orange;
+box-shadow: 0 4px 8px 0 orange;
+}
+#contact{
+    background-color: grey;
+    padding-bottom: 4em;   
+}
+#navbarNavAltMarkup{
+margin-left: 80%;
+}
+    </style>
+</head>
+<body>
+    <div class="fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-light"  style="background-color: #e3f2fd;">
+            <a class="navbar-brand" href="#"><img src="https://www.jotform.com/blog/wp-content/uploads/2020/05/How-to-start-a-food-delivery-business.png" class="stylinglogo"/></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+  
+                <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Resturants
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  {% for i in resturants %}
+                  <a class="dropdown-item" href="{{url_for('resturantshome',name=i[0])}}">{{i[0]}}</a>
+                  {% endfor %}
+                </div>
+               
+                <i class="fa-solid fa-house"></i><a class="nav-link active" href="/" id="go">Home <span class="sr-only">(current)</span></a>
+                <i class="fa-solid fa-cart-shopping fa"></i><a class="nav-link" href="/viewcart" id="go">Cart</a>
+                {% if not session.get('user') %}
+                <i class="fa-solid fa-user"></i><a class="nav-link" href="{{url_for('login')}}" id="go">login</a>
+                <i class="fa-solid fa-right-to-bracket"></i><a class="nav-link" href="{{url_for('register')}}" id="go">Signup</a>
+                {% else %}
+                <i class="fa-solid fa-right-to-bracket"></i><a class="nav-link" href="{{url_for('orders')}}" id="go">orders</a>
+
+                <i class="fa-solid fa-right-to-bracket"></i><a class="nav-link" href="{{url_for('logout')}}" id="go">logout</a>
+
+                <b>{{session.get('user')}}</b>
+                {% endif %}
+                <form method="POST" action="{{url_for('search')}}">
+                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ml-auto search ">
+                      <input type="search" placeholder="search for item" name="search">
+                      <button class="btn btn-success" >search</button>
+                  </div>
+                </div>
+              </form>
+              
+            
+        </nav>
+          </div>
+    {% block content %} 
+          <div class="bgimg d-flex flex-column justify-content-end">
+        <div class="text-center mb-4">
+         
+      </div>
+      </div>
+    </div>
+    <!--Explore section-->
+      <div class="bgcolor3 pt-4 pd-4">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+            <h1 class="head2">--Food Menu--</h1>
+                  <p class="para2">Most popular Items</p>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="exploreclass shadow p-3 mb-3">
+              <img src="https://www.eatthis.com/wp-content/uploads/sites/4/2022/06/fast-food-assortment-soda.jpg?quality=82&strip=1" clasS="exploreimage w-100"/>
+              <h1 class="cardhead4">Fast Foods</h1>
+              <a href="fastfoods.html" class="explorelink"><a href="{{url_for('homepage',category='fastfoods')}}">view more </a><i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="exploreclass shadow p-3 mb-3">
+              <img src="https://static.toiimg.com/thumb/63316820.cms?width=1200&height=900" clasS="exploreimage w-100"/>
+              <h1 class="cardhead4">Veg Food</h1>
+              <a href="veg.html" class="explorelink"><a href="{{url_for('homepage',category='vegfoods')}}">view more </a><i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+          
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="exploreclass shadow p-3 mb-3">
+              <img src=https://restroandcafe.mangalmurtihimalayanhospitality.com/wp-content/uploads/2022/02/107-1074468_about-chicken-biryani-images-hd-png-transparent-png-removebg-preview.png"" clasS="exploreimage w-100"/>
+              <h1 class="cardhead4">Non-Veg Food</h1>
+              <a href="non-veg.html" class="explorelink"><a href="{{url_for('homepage',category='nonvegfoods')}}">view more </a><i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+           <div class="col-12 col-md-6 col-lg-3">
+            <div class="exploreclass shadow p-3 mb-3">
+              <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/snv20e4blnzikoygty5z" clasS="exploreimage w-100"/>
+              <h1 class="cardhead4">Pastry</h1>
+              <a href="pastry.html" class="explorelink"><a href="{{url_for('homepage',category='pastry')}}">view more </a><i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="exploreclass shadow p-3 mb-3">
+              <img src="https://assets.telegraphindia.com/telegraph/2022/Mar/1648476591_whatsapp-image-2022-03-28-at-19-36-29.jpeg" class="exploreimage w-100"/>
+              <h1 class="cardhead4">Icecreams</h1>
+              <a href="icecreams.html" class="explorelink"><a href="{{url_for('homepage',category='icecreams')}}">view more</a><i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="exploreclass shadow p-3 mb-3">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5-nvci9fZwNa9Amjl1MCQcK-6u584BNGRIQ&usqp=CAU" clasS="exploreimage w-100"/>
+              <h1 class="cardhead4">Home food</h1>
+              <a href="homefood.html" class="explorelink"><a href="{{url_for('homepage',category='homefood')}}">view more</a><i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="exploreclass shadow p-3 mb-3">
+                <img src=" https://5.imimg.com/data5/SELLER/Default/2021/9/WK/YL/RM/125386639/chicken-popcorn-500x500.jpg" clasS="exploreimage w-100"/>
+                <h1 class="cardhead4">starters</h1>
+                <a href="starters.html" class="explorelink"><a href="{{url_for('homepage',category='starters')}}">view more</a><i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3">
+                <div class="exploreclass shadow p-3 mb-3">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz-G2jrbmIUvrP2-mI4NCUwAMtXEBSPVYxOw&usqp=CAU" clasS="exploreimage w-100"/>
+                  <h1 class="cardhead4">soups</h1>
+                  <a href="soups.html" class="explorelink"><a href="{{url_for('homepage',category='soups')}}">view more</a><i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+              </div>
+          </div>
+        </div>
+        </div>
+      </div>
+      </div>
+      
+<!--our survices-->
+<h1 class="services"><b>--Our Services--<b></h1>
+  <div class="container">
+    <div class="row">
+        <div class="col-12 col-md-6 col-lg-3">
+            <img src="https://xmonkeys360.com/wp-content/uploads/2020/02/Googlemap-600x551-1.jpg" class="w"/>
+            <label class="w">To Any Location</label>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+            <img src="https://i.pinimg.com/736x/50/53/e5/5053e50d44b104d89bd4d6f1358cb632.jpg" class="w" />
+            <label class="w">24/7 services</label>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+            <img src="https://thumbs.dreamstime.com/b/fast-delivery-watch-service-red-arrows-express-stopwatch-icon-vector-eps-143602897.jpg" class="w"/>
+            <label class="w">Fast Delivery</label>
+           
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT09Q5LLjvifd6dQ7Z8S7hkboRKcV1GGfHTliP3aqg3EpXOmSIiVGEq52rz1t_wDFEtWHBvReTawJA&usqp=CAU&ec=48665701" class="w"/>
+            <label class="w">clean and hygenic serives</label>
+            
+        </div>
+    </div>
+</div>
+
+<!--contact us-->
+<div>
+  <section id="contact">
+      <div class="container">
+        <h1 class="text-center pt-3 pb-3" style="color:white;">Contact us</h1>
+        <div class="row">
+          <div class="col-12 col-lg-6">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d244820.24784205385!2d80.50479758470054!3d16.510118138668407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a35eff9482d944b%3A0x939b7e84ab4a0265!2sVijayawada%2C%20Andhra%20Pradesh!5e0!3m2!1sen!2sin!4v1680763139626!5m2!1sen!2sin" width="450" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="col-12 col-lg-6">  
+            <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Resturants
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              {% for i in resturants %}
+              <a class="dropdown-item" href="{{url_for('resturantshome',name=i[0])}}">{{i[0]}}</a>
+              {% endfor %}
+            </div>
+              <form method="POST">
+                  <input class="form-control form-control-lg" type="text" placeholder="Name" name="name">
+          <input class="form-control form-control-lg mt-3" type="email" placeholder="Email" name="email">
+          <input class="form-control form-control-lg mt-3" type="text" placeholder="Subject" name="subject">
+          <textarea class="form-control mt-3" id="exampleFormControlTextarea1" rows="3" placeholder="Feedback" name="feedback"></textarea> 
+              </form>
+              <button class="btn btn-success mt-3" type="submit">Contact Us</button>
+          </div>
+      </div>
+  </div>
+</section>
+</div>
+{% endblock %}
+
+
+
+
+          <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>       
+</body>
+</html>
